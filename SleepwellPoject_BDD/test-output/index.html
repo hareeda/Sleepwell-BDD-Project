@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 9 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
+              <span class="suite-name border-failed">Default suite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
+                    <span>C:\Users\user\AppData\Local\Temp\testng-eclipse-1042895473\testng-customsuite.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                    <span>1 group</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">14 methods, 9 failed,   5 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods failed suite-Default_suite"> (hide)</a> <!-- hide-methods failed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods failed suite-Default_suite"> (show)</a> <!-- show-methods failed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Default_suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.ust.runner.CucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verifying that after entering all details the call back form is submitted successfully&quot;, &quot;Verifying...)">runScenario("Verifying that after entering all details the call back form is submitted successfully", "Verifying...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.ust.runner.CucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verifying that after entering all details the form is submitted successfully&quot;, &quot;Verifying the conta...)">runScenario("Verifying that after entering all details the form is submitted successfully", "Verifying the conta...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.ust.runner.CucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verifying that after entering all details the call back form is submitted successfully&quot;, &quot;Verifying...)">runScenario("Verifying that after entering all details the call back form is submitted successfully", "Verifying...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.ust.runner.CucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verifying that after entering all details the form is submitted successfully&quot;, &quot;Verifying the conta...)">runScenario("Verifying that after entering all details the form is submitted successfully", "Verifying the conta...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.ust.runner.CucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify the sleepwell mattress store near to the given location&quot;, &quot;Verifying the find showroom featu...)">runScenario("Verify the sleepwell mattress store near to the given location", "Verifying the find showroom featu...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.ust.runner.CucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verifying that error message is shown if invalid city is given&quot;, &quot;Verifying the find showroom featu...)">runScenario("Verifying that error message is shown if invalid city is given", "Verifying the find showroom featu...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.ust.runner.CucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify Offer Link Navigation and Content&quot;, &quot;Validating the offer link in the Sleepwell website.&quot;)">runScenario("Verify Offer Link Navigation and Content", "Validating the offer link in the Sleepwell website.")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.ust.runner.CucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Invalid data displays appropriate error messages&quot;, &quot;Warranty Registration&quot;)">runScenario("Invalid data displays appropriate error messages", "Warranty Registration")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.ust.runner.CucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verifying that after entering all details the call back form is submitted successfully&quot;, &quot;Verifying...)">runScenario("Verifying that after entering all details the call back form is submitted successfully", "Verifying...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Default_suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Default_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.ust.runner.CucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;To verify that user navigates to the warranty policy page on clicking warranty link.&quot;, &quot;Verifying t...)">runScenario("To verify that user navigates to the warranty policy page on clicking warranty link.", "Verifying t...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.ust.runner.CucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verifying that the submit button is disabled if no details are entered.&quot;, &quot;Verifying the call back ...)">runScenario("Verifying that the submit button is disabled if no details are entered.", "Verifying the call back ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.ust.runner.CucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verifying that the submit button is disabled if no details is entered.&quot;, &quot;Verifying the contact us ...)">runScenario("Verifying that the submit button is disabled if no details is entered.", "Verifying the contact us ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.ust.runner.CucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;Verify New Link Navigation and Content&quot;, &quot;Verify clicking New link takes us to new products page.&quot;)">runScenario("Verify New Link Navigation and Content", "Verify clicking New link takes us to new products page.")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="com.ust.runner.CucumberRunner" class="method navigator-link" hash-for-method="runScenario(&quot;User encounters a server error&quot;, &quot;Verify appropriate error message for server error&quot;)">runScenario("User encounters a server error", "Verify appropriate error message for server error")</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Default_suite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Default_suite" class="panel Default_suite">
+          <div class="suite-Default_suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.ust.runner.CucumberRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verifying that after entering all details the call back form is submitted successfully&quot;, &quot;Verifying...)">
+                  </a> <!-- runScenario("Verifying that after entering all details the call back form is submitted successfully", "Verifying...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verifying that after entering all details the call back form is submitted successfully","Verifying the call back form filling in saathi page of")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.ust.stepdefinitions.CallBackTest.user_clicks_on_sleepwell_saathi_sofa_refurbishment_button(CallBackTest.java:52)
+	at ✽.user clicks on Sleepwell Saathi: Sofa Refurbishment button(classpath:Features/CallBackForm.feature:13)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verifying that after entering all details the form is submitted successfully&quot;, &quot;Verifying the conta...)">
+                  </a> <!-- runScenario("Verifying that after entering all details the form is submitted successfully", "Verifying the conta...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verifying that after entering all details the form is submitted successfully","Verifying the contact us form filling in saathi page of")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.ust.stepdefinitions.ContactUsTest.user_clicks_on_institutional_enquiry(ContactUsTest.java:44)
+	at ✽.user clicks on Institutional Enquiry(classpath:Features/ContactUsForm.feature:12)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verifying that after entering all details the call back form is submitted successfully&quot;, &quot;Verifying...)">
+                  </a> <!-- runScenario("Verifying that after entering all details the call back form is submitted successfully", "Verifying...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verifying that after entering all details the call back form is submitted successfully","Verifying the call back form filling in saathi page of")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.ust.stepdefinitions.CallBackTest.validate_the_submission_submited_message(CallBackTest.java:83)
+	at ✽.validate the submission submited message(classpath:Features/CallBackForm.feature:24)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verifying that after entering all details the form is submitted successfully&quot;, &quot;Verifying the conta...)">
+                  </a> <!-- runScenario("Verifying that after entering all details the form is submitted successfully", "Verifying the conta...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verifying that after entering all details the form is submitted successfully","Verifying the contact us form filling in saathi page of")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.ust.stepdefinitions.ContactUsTest.validate_the_submission_submitted_message(ContactUsTest.java:65)
+	at ✽.validate the submission submitted message(classpath:Features/ContactUsForm.feature:23)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify the sleepwell mattress store near to the given location&quot;, &quot;Verifying the find showroom featu...)">
+                  </a> <!-- runScenario("Verify the sleepwell mattress store near to the given location", "Verifying the find showroom featu...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify the sleepwell mattress store near to the given location","Verifying the find showroom feature in the sleepwell mattress website.")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.ust.stepdefinitions.FindShowroomTest.validate_that_the_store_near_to_given_area_is_displayed(FindShowroomTest.java:57)
+	at ✽.validate that the store near to given area is displayed(classpath:Features/FindShowroom.feature:15)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verifying that error message is shown if invalid city is given&quot;, &quot;Verifying the find showroom featu...)">
+                  </a> <!-- runScenario("Verifying that error message is shown if invalid city is given", "Verifying the find showroom featu...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verifying that error message is shown if invalid city is given","Verifying the find showroom feature in the sleepwell mattress website.")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.ust.stepdefinitions.FindShowroomTest.user_clicks_on_find_showroom_and_navigates_to_the_store_locator_page(FindShowroomTest.java:39)
+	at ✽.user clicks on Find Showroom and navigates to the store locator page.(classpath:Features/FindShowroom.feature:10)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify Offer Link Navigation and Content&quot;, &quot;Validating the offer link in the Sleepwell website.&quot;)">
+                  </a> <!-- runScenario("Verify Offer Link Navigation and Content", "Validating the offer link in the Sleepwell website.") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify Offer Link Navigation and Content","Validating the offer link in the Sleepwell website.")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.sl-container h1&quot;}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9d38df0a116f71e654b56160aab98bd4, findElement {using=css selector, value=div.sl-container h1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52468}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52468/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9d38df0a116f71e654b56160aab98bd4
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.getText(Unknown Source)
+	at com.ust.reusable.ReusableMethods.isStringMatch(ReusableMethods.java:94)
+	at com.ust.popages.OffersPage.verifyExpectedResults(OffersPage.java:42)
+	at com.ust.stepdefinitions.OfferTest.i_validate_offer_outcomes(OfferTest.java:40)
+	at ✽.I validate offer outcomes(classpath:Features/OfferLink.feature:12)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Invalid data displays appropriate error messages&quot;, &quot;Warranty Registration&quot;)">
+                  </a> <!-- runScenario("Invalid data displays appropriate error messages", "Warranty Registration") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Invalid data displays appropriate error messages","Warranty Registration")</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class, &apos;snackbar-message&apos;) and contains(text(), &apos;Error : Serial number not found&apos;)]&quot;}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [36d6bd79e48f5e0cba750bf717c8d474, findElement {using=xpath, value=//div[contains(@class, &apos;snackbar-message&apos;) and contains(text(), &apos;Error : Serial number not found&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52757}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52757/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 36d6bd79e48f5e0cba750bf717c8d474
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.getText(Unknown Source)
+	at com.ust.stepdefinitions.WarrantyRegistrationTest.the_user_should_see_a_serial_number_error_message(WarrantyRegistrationTest.java:99)
+	at ✽.the user should see a serial number error message &quot;Serial number not found&quot;(classpath:Features/WarrantyRegistration.feature:19)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verifying that after entering all details the call back form is submitted successfully&quot;, &quot;Verifying...)">
+                  </a> <!-- runScenario("Verifying that after entering all details the call back form is submitted successfully", "Verifying...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verifying that after entering all details the call back form is submitted successfully","Verifying the call back form filling in saathi page of")</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.ust.stepdefinitions.CallBackTest.user_clicks_on_sleepwell_saathi_sofa_refurbishment_button(CallBackTest.java:52)
+	at ✽.user clicks on Sleepwell Saathi: Sofa Refurbishment button(classpath:Features/CallBackForm.feature:13)
+
+</div> <!-- stack-trace -->
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-failed -->
+          <div class="suite-Default_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.ust.runner.CucumberRunner</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;To verify that user navigates to the warranty policy page on clicking warranty link.&quot;, &quot;Verifying t...)">
+                  </a> <!-- runScenario("To verify that user navigates to the warranty policy page on clicking warranty link.", "Verifying t...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("To verify that user navigates to the warranty policy page on clicking warranty link.","Verifying the Warranty Link Functionality")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verifying that the submit button is disabled if no details are entered.&quot;, &quot;Verifying the call back ...)">
+                  </a> <!-- runScenario("Verifying that the submit button is disabled if no details are entered.", "Verifying the call back ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verifying that the submit button is disabled if no details are entered.","Verifying the call back form filling in saathi page of")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verifying that the submit button is disabled if no details is entered.&quot;, &quot;Verifying the contact us ...)">
+                  </a> <!-- runScenario("Verifying that the submit button is disabled if no details is entered.", "Verifying the contact us ...) -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verifying that the submit button is disabled if no details is entered.","Verifying the contact us form filling in saathi page of")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;Verify New Link Navigation and Content&quot;, &quot;Verify clicking New link takes us to new products page.&quot;)">
+                  </a> <!-- runScenario("Verify New Link Navigation and Content", "Verify clicking New link takes us to new products page.") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("Verify New Link Navigation and Content","Verify clicking New link takes us to new products page.")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="runScenario(&quot;User encounters a server error&quot;, &quot;Verify appropriate error message for server error&quot;)">
+                  </a> <!-- runScenario("User encounters a server error", "Verify appropriate error message for server error") -->
+                  <span class="method-name">runScenario</span>
+                  <span class="parameters">("User encounters a server error","Verify appropriate error message for server error")</span>
+                  <em>
+(Runs Cucumber Scenarios)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Default_suite-class-passed -->
+        </div> <!-- panel Default_suite -->
+        <div panel-name="test-xml-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\user\AppData\Local\Temp\testng-eclipse-1042895473\testng-customsuite.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.ust.runner.CucumberRunner&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Default test --&gt;
+&lt;/suite&gt; &lt;!-- Default suite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Default test (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">cucumber</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">runScenario</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Default_suite');
+function tableData_Default_suite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(14);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'runScenario')
+data.setCell(0, 2, 'com.ust.runner.CucumberRunner')
+data.setCell(0, 3, 241720);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'runScenario')
+data.setCell(1, 2, 'com.ust.runner.CucumberRunner')
+data.setCell(1, 3, 67259);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'runScenario')
+data.setCell(2, 2, 'com.ust.runner.CucumberRunner')
+data.setCell(2, 3, 62791);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'runScenario')
+data.setCell(3, 2, 'com.ust.runner.CucumberRunner')
+data.setCell(3, 3, 50757);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'runScenario')
+data.setCell(4, 2, 'com.ust.runner.CucumberRunner')
+data.setCell(4, 3, 49792);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'runScenario')
+data.setCell(5, 2, 'com.ust.runner.CucumberRunner')
+data.setCell(5, 3, 47008);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'runScenario')
+data.setCell(6, 2, 'com.ust.runner.CucumberRunner')
+data.setCell(6, 3, 43487);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'runScenario')
+data.setCell(7, 2, 'com.ust.runner.CucumberRunner')
+data.setCell(7, 3, 42835);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'runScenario')
+data.setCell(8, 2, 'com.ust.runner.CucumberRunner')
+data.setCell(8, 3, 38706);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'runScenario')
+data.setCell(9, 2, 'com.ust.runner.CucumberRunner')
+data.setCell(9, 3, 36383);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'runScenario')
+data.setCell(10, 2, 'com.ust.runner.CucumberRunner')
+data.setCell(10, 3, 33286);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'runScenario')
+data.setCell(11, 2, 'com.ust.runner.CucumberRunner')
+data.setCell(11, 3, 30175);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'runScenario')
+data.setCell(12, 2, 'com.ust.runner.CucumberRunner')
+data.setCell(12, 3, 26948);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'runScenario')
+data.setCell(13, 2, 'com.ust.runner.CucumberRunner')
+data.setCell(13, 3, 19044);
+window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 13 minutes</span>
+              <div id="times-div-Default_suite">
+              </div> <!-- times-div-Default_suite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Default suite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Default_suite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.ust.runner.CucumberRunner</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUpClass(org.testng.TestRunner@538b3c88)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verifying that the submit button is disabled if no details are entered.", "Verifying the call back ...)</span>
+                <span class="method-start">3799 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verifying that after entering all details the call back form is submitted successfully", "Verifying...)</span>
+                <span class="method-start">71068 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verifying that after entering all details the call back form is submitted successfully", "Verifying...)</span>
+                <span class="method-start">120866 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verifying that after entering all details the call back form is submitted successfully", "Verifying...)</span>
+                <span class="method-start">171623 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verifying that the submit button is disabled if no details is entered.", "Verifying the contact us ...)</span>
+                <span class="method-start">218631 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verifying that after entering all details the form is submitted successfully", "Verifying the conta...)</span>
+                <span class="method-start">255014 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verifying that after entering all details the form is submitted successfully", "Verifying the conta...)</span>
+                <span class="method-start">317805 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify the sleepwell mattress store near to the given location", "Verifying the find showroom featu...)</span>
+                <span class="method-start">360640 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verifying that error message is shown if invalid city is given", "Verifying the find showroom featu...)</span>
+                <span class="method-start">387588 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("Verify New Link Navigation and Content", "Verify clicking New link takes us to new products page.")</span>
+                <span class="method-start">420874 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Verify Offer Link Navigation and Content", "Validating the offer link in the Sleepwell website.")</span>
+                <span class="method-start">451049 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("User encounters a server error", "Verify appropriate error message for server error")</span>
+                <span class="method-start">494536 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">runScenario("To verify that user navigates to the warranty policy page on clicking warranty link.", "Verifying t...)</span>
+                <span class="method-start">533252 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">runScenario("Invalid data displays appropriate error messages", "Warranty Registration")</span>
+                <span class="method-start">552296 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDownClass</span>
+                <span class="method-start">794059 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

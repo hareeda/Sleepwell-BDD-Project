@@ -1,0 +1,382 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>5/9/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Mar 19 22:28:11 IST 2025</td>
+</tr>
+<tr><td>Total time:</td><td>794 seconds (794375 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.ust.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.ust.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying that after entering all details the call back form is submitted successfully", "Verifying the call back form filling in saathi page of"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.ust.stepdefinitions.CallBackTest.user_clicks_on_sleepwell_saathi_sofa_refurbishment_button(CallBackTest.java:52)
+	at ✽.user clicks on Sleepwell Saathi: Sofa Refurbishment button(classpath:Features/CallBackForm.feature:13)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1996787860", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1996787860'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.ust.stepdefinitions.CallBackTest.user_clicks_on_sleepwell_saathi_sofa_refurbishment_button(CallBackTest.java:52)
+	at ✽.user clicks on Sleepwell Saathi: Sofa Refurbishment button(classpath:Features/CallBackForm.feature:13)
+</pre></div></td>
+<td>49</td>
+<td>com.ust.runner.CucumberRunner@1dac5ef</td></tr>
+<tr>
+<td title='com.ust.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.ust.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying that after entering all details the form is submitted successfully", "Verifying the contact us form filling in saathi page of"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.ust.stepdefinitions.ContactUsTest.user_clicks_on_institutional_enquiry(ContactUsTest.java:44)
+	at ✽.user clicks on Institutional Enquiry(classpath:Features/ContactUsForm.feature:12)
+</pre></div><a href='#' onClick='toggleBox("stack-trace162214155", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace162214155'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.ust.stepdefinitions.ContactUsTest.user_clicks_on_institutional_enquiry(ContactUsTest.java:44)
+	at ✽.user clicks on Institutional Enquiry(classpath:Features/ContactUsForm.feature:12)
+</pre></div></td>
+<td>62</td>
+<td>com.ust.runner.CucumberRunner@1dac5ef</td></tr>
+<tr>
+<td title='com.ust.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.ust.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying that after entering all details the call back form is submitted successfully", "Verifying the call back form filling in saathi page of"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.ust.stepdefinitions.CallBackTest.validate_the_submission_submited_message(CallBackTest.java:83)
+	at ✽.validate the submission submited message(classpath:Features/CallBackForm.feature:24)
+</pre></div><a href='#' onClick='toggleBox("stack-trace895259838", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace895259838'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.ust.stepdefinitions.CallBackTest.validate_the_submission_submited_message(CallBackTest.java:83)
+	at ✽.validate the submission submited message(classpath:Features/CallBackForm.feature:24)
+</pre></div></td>
+<td>50</td>
+<td>com.ust.runner.CucumberRunner@1dac5ef</td></tr>
+<tr>
+<td title='com.ust.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.ust.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying that after entering all details the form is submitted successfully", "Verifying the contact us form filling in saathi page of"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.ust.stepdefinitions.ContactUsTest.validate_the_submission_submitted_message(ContactUsTest.java:65)
+	at ✽.validate the submission submitted message(classpath:Features/ContactUsForm.feature:23)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1202929159", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1202929159'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.ust.stepdefinitions.ContactUsTest.validate_the_submission_submitted_message(ContactUsTest.java:65)
+	at ✽.validate the submission submitted message(classpath:Features/ContactUsForm.feature:23)
+</pre></div></td>
+<td>42</td>
+<td>com.ust.runner.CucumberRunner@1dac5ef</td></tr>
+<tr>
+<td title='com.ust.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.ust.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify the sleepwell mattress store near to the given location", "Verifying the find showroom feature in the sleepwell mattress website."</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.ust.stepdefinitions.FindShowroomTest.validate_that_the_store_near_to_given_area_is_displayed(FindShowroomTest.java:57)
+	at ✽.validate that the store near to given area is displayed(classpath:Features/FindShowroom.feature:15)
+</pre></div><a href='#' onClick='toggleBox("stack-trace423539130", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace423539130'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.ust.stepdefinitions.FindShowroomTest.validate_that_the_store_near_to_given_area_is_displayed(FindShowroomTest.java:57)
+	at ✽.validate that the store near to given area is displayed(classpath:Features/FindShowroom.feature:15)
+</pre></div></td>
+<td>26</td>
+<td>com.ust.runner.CucumberRunner@1dac5ef</td></tr>
+<tr>
+<td title='com.ust.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.ust.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying that error message is shown if invalid city is given", "Verifying the find showroom feature in the sleepwell mattress website."</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.ust.stepdefinitions.FindShowroomTest.user_clicks_on_find_showroom_and_navigates_to_the_store_locator_page(FindShowroomTest.java:39)
+	at ✽.user clicks on Find Showroom and navigates to the store locator page.(classpath:Features/FindShowroom.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1906635841", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1906635841'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.ust.stepdefinitions.FindShowroomTest.user_clicks_on_find_showroom_and_navigates_to_the_store_locator_page(FindShowroomTest.java:39)
+	at ✽.user clicks on Find Showroom and navigates to the store locator page.(classpath:Features/FindShowroom.feature:10)
+</pre></div></td>
+<td>33</td>
+<td>com.ust.runner.CucumberRunner@1dac5ef</td></tr>
+<tr>
+<td title='com.ust.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.ust.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify Offer Link Navigation and Content", "Validating the offer link in the Sleepwell website."</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.sl-container h1&quot;}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9d38df0a116f71e654b56160aab98bd4, findElement {using=css selector, value=div.sl-container h1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52468}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52468/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9d38df0a116f71e654b56160aab98bd4
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.getText(Unknown Source)
+	at com.ust.reusable.ReusableMethods.isStringMatch(ReusableMethods.java:94)
+	at com.ust.popages.OffersPage.verifyExpectedResults(OffersPage.java:42)
+	at com.ust.stepdefinitions.OfferTest.i_validate_offer_outcomes(OfferTest.java:40)
+	at ✽.I validate offer outcomes(classpath:Features/OfferLink.feature:12)
+</pre></div><a href='#' onClick='toggleBox("stack-trace394840929", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace394840929'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;div.sl-container h1&quot;}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [9d38df0a116f71e654b56160aab98bd4, findElement {using=css selector, value=div.sl-container h1}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52468}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52468/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 9d38df0a116f71e654b56160aab98bd4
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.getText(Unknown Source)
+	at com.ust.reusable.ReusableMethods.isStringMatch(ReusableMethods.java:94)
+	at com.ust.popages.OffersPage.verifyExpectedResults(OffersPage.java:42)
+	at com.ust.stepdefinitions.OfferTest.i_validate_offer_outcomes(OfferTest.java:40)
+	at ✽.I validate offer outcomes(classpath:Features/OfferLink.feature:12)
+</pre></div></td>
+<td>43</td>
+<td>com.ust.runner.CucumberRunner@1dac5ef</td></tr>
+<tr>
+<td title='com.ust.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.ust.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Invalid data displays appropriate error messages", "Warranty Registration"</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class, &apos;snackbar-message&apos;) and contains(text(), &apos;Error : Serial number not found&apos;)]&quot;}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [36d6bd79e48f5e0cba750bf717c8d474, findElement {using=xpath, value=//div[contains(@class, &apos;snackbar-message&apos;) and contains(text(), &apos;Error : Serial number not found&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52757}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52757/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 36d6bd79e48f5e0cba750bf717c8d474
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.getText(Unknown Source)
+	at com.ust.stepdefinitions.WarrantyRegistrationTest.the_user_should_see_a_serial_number_error_message(WarrantyRegistrationTest.java:99)
+	at ✽.the user should see a serial number error message &quot;Serial number not found&quot;(classpath:Features/WarrantyRegistration.feature:19)
+</pre></div><a href='#' onClick='toggleBox("stack-trace389353983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace389353983'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//div[contains(@class, &apos;snackbar-message&apos;) and contains(text(), &apos;Error : Serial number not found&apos;)]&quot;}
+  (Session info: chrome=134.0.6998.89)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.18.1&apos;, revision: &apos;b1d3319b48&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;21.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [36d6bd79e48f5e0cba750bf717c8d474, findElement {using=xpath, value=//div[contains(@class, &apos;snackbar-message&apos;) and contains(text(), &apos;Error : Serial number not found&apos;)]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 134.0.6998.89, chrome: {chromedriverVersion: 134.0.6998.88 (7e3d5c978c6d..., userDataDir: C:\Users\user\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52757}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52757/devtoo..., se:cdpVersion: 134.0.6998.89, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 36d6bd79e48f5e0cba750bf717c8d474
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy25.getText(Unknown Source)
+	at com.ust.stepdefinitions.WarrantyRegistrationTest.the_user_should_see_a_serial_number_error_message(WarrantyRegistrationTest.java:99)
+	at ✽.the user should see a serial number error message &quot;Serial number not found&quot;(classpath:Features/WarrantyRegistration.feature:19)
+</pre></div></td>
+<td>241</td>
+<td>com.ust.runner.CucumberRunner@1dac5ef</td></tr>
+<tr>
+<td title='com.ust.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.ust.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying that after entering all details the call back form is submitted successfully", "Verifying the call back form filling in saathi page of"</td>
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.ust.stepdefinitions.CallBackTest.user_clicks_on_sleepwell_saathi_sofa_refurbishment_button(CallBackTest.java:52)
+	at ✽.user clicks on Sleepwell Saathi: Sofa Refurbishment button(classpath:Features/CallBackForm.feature:13)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1349168118", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1349168118'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1590)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at com.ust.stepdefinitions.CallBackTest.user_clicks_on_sleepwell_saathi_sofa_refurbishment_button(CallBackTest.java:52)
+	at ✽.user clicks on Sleepwell Saathi: Sofa Refurbishment button(classpath:Features/CallBackForm.feature:13)
+</pre></div></td>
+<td>47</td>
+<td>com.ust.runner.CucumberRunner@1dac5ef</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.ust.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.ust.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "To verify that user navigates to the warranty policy page on clicking warranty link.", "Verifying the Warranty Link Functionality"</td>
+<td></td>
+<td>19</td>
+<td>com.ust.runner.CucumberRunner@1dac5ef</td></tr>
+<tr>
+<td title='com.ust.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.ust.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying that the submit button is disabled if no details are entered.", "Verifying the call back form filling in saathi page of"</td>
+<td></td>
+<td>67</td>
+<td>com.ust.runner.CucumberRunner@1dac5ef</td></tr>
+<tr>
+<td title='com.ust.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.ust.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verifying that the submit button is disabled if no details is entered.", "Verifying the contact us form filling in saathi page of"</td>
+<td></td>
+<td>36</td>
+<td>com.ust.runner.CucumberRunner@1dac5ef</td></tr>
+<tr>
+<td title='com.ust.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.ust.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify New Link Navigation and Content", "Verify clicking New link takes us to new products page."</td>
+<td></td>
+<td>30</td>
+<td>com.ust.runner.CucumberRunner@1dac5ef</td></tr>
+<tr>
+<td title='com.ust.runner.CucumberRunner.runScenario()'><b>runScenario</b><br>Test class: com.ust.runner.CucumberRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "User encounters a server error", "Verify appropriate error message for server error"</td>
+<td></td>
+<td>38</td>
+<td>com.ust.runner.CucumberRunner@1dac5ef</td></tr>
+</table><p>
+</body>
+</html>
