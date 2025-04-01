@@ -36,6 +36,16 @@ Reporting: Extent Reports
 
 Test Scenarios Covered
 Feature	Description	File
+Callback Form	- Automates the callback request process - CallBackForm.feature
+Contact Us - Tests customer support form submission - ContactUsForm.feature
+Find Showroom - Verifies showroom locator functionality - FindShowroom.feature
+New Link - Validates the addition of new links - NewLink.feature
+Offer Link - Tests promotional offers and discount links - OfferLink.feature
+Server Error - Handling	Checks application behavior for server errors - ServerError.feature
+Warranty Link - Automates warranty claim and validation - WarrantyLink.feature
+Warranty Registration - Ensures proper warranty registration flow - WarrantyRegistration.feature
+
+Feature	Description	File
 Callback Form	Automates the callback request process	CallBackForm.feature
 Contact Us	Tests customer support form submission	ContactUsForm.feature
 Find Showroom	Verifies showroom locator functionality	FindShowroom.feature
@@ -57,7 +67,7 @@ Git installed
 Steps to Clone and Run
 Clone the repository
 
-git clone https://github.com/yourusername/sleepwell-bdd-project.git
+git clone https://github.com/hareeda/sleepwell-bdd-project.git
 cd sleepwell-bdd-project
 Install dependencies
 
